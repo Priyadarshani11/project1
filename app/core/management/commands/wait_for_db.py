@@ -1,5 +1,8 @@
 """
 Django command to wait for database to be available
+TODO
+Refer - how to add custom django-admin command?
+https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/
 """
 
 import time
@@ -12,7 +15,7 @@ class Command(BaseCommand):
     """Django command to wait for database"""
 
     def handle(self, *args, **kwargs):
-        """ Entrypoint for command """
+        """Entrypoint for command"""
 
         self.stdout.write("waiting for database....")
         db_up = False
