@@ -1,7 +1,7 @@
 from django.contrib import admin  # noqa
 from django.contrib.auth import get_user_model
 
-# from core import models
+
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 #  TODO - refer -
@@ -16,9 +16,9 @@ from django.utils.translation import gettext_lazy as _
 # https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/#adding-actions-to-the-modeladmin
 
 
-class UserAdmin(BaseUserAdmin):
-    ordering = ("email",)
-    list_display = ("email", "is_active")
+# class UserAdmin(BaseUserAdmin):
+#     ordering = ("email",)
+#     list_display = ("email", "is_active")
 
 
 class UserAdmin(BaseUserAdmin):
