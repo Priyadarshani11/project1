@@ -1,5 +1,6 @@
 from django.contrib import admin  # noqa
 from django.contrib.auth import get_user_model
+
 # from core import models
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
@@ -16,7 +17,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class UserAdmin(BaseUserAdmin):
-    ordering = ("email", )
+    ordering = ("email",)
     list_display = ("email", "is_active")
 
 
